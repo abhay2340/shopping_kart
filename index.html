@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Kart</title>
+</head>
+
+<body>
+
+  <!-- **********************NAVBAR************************ -->
+  <div>
+    <div class="navbar">
+      <div class="logo"><img src="logo.svg" alt=""></div>
+
+      <ul class="center-nav">
+        <li><a href="">Collection</a></li>
+        <li><a href="">Men</a> </li>
+        <li><a href="">Women</a> </li>
+        <li><a href="">About</a> </li>
+        <li><a href="">Contact</a> </li>
+      </ul>
+      <div class="wrapper-for-kart-profile">
+        <div class="dropdown">
+
+          <img class="kart-image" src=" icon-cart.svg" alt="">
+
+          <!-- <p class="abhay">ABHAY</p> -->
+          <div class="dropdown-content ">
+            <div class="mini-card">
+              <span>CART</span>
+              <div class="line"></div>
+
+              <img class="mini-img" src="image-product-1-thumbnail.jpg" alt="">
+              <p class="shoe-type">Fall unlimited Editon Sneakers</p>
+              <p id="final-price">$125.00 X 3 <b> $375.00</b></p>
+              <h4 class="checkout">Checkout</h4>
+            </div>
+          </div>
+        </div>
+        <div class="right-nav">
+          <img class="profile" src="image-avatar.png" alt="">
+
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+
+    <!-- **********************MAIN SECTION**************** -->
+
+    <div class="main">
+      <div class="left">
+        <div class="main-product"><img id="main-prod" src="image-product-1.jpg" alt=""></div>
+        <div class="sub">
+          <div class="sub-product"><img onclick="getId(this)" id="sub-product-1" src="image-product-1-thumbnail.jpg"
+              alt=""></div>
+          <div class="sub-product"><img onclick="getId(this)" id="sub-product-2" src="image-product-2-thumbnail.jpg"
+              alt=""></div>
+          <div class="sub-product"><img onclick="getId(this)" id="sub-product-3" src="image-product-3-thumbnail.jpg"
+              alt=""></div>
+          <div class="sub-product"><img onclick="getId(this)" id="sub-product-4" src="image-product-4-thumbnail.jpg"
+              alt=""></div>
+        </div>
+      </div>
+
+
+
+
+      <div class="right">
+        <div class="right1">
+          <h5>SNEAKER COMPANY</h5>
+          <h2>Fall Limited Edition <br> Sneakers</h2>
+          <p class="para">These low profile sneakers are your perfect casual wear companion. feauring a durable rubber
+            outer solw. they
+            will withstand everything the weather can offer.</p>
+          <div class="amount-and-discount-row">
+            <h4 id="disc-amnt">$125.00</h4>
+            <p id="disc">50%</p>
+          </div>
+          <p id="wo-disc-amnt">$250.00</p>
+          <!-- <br> -->
+          <div class="plus-minus">
+            <p id="minus">-</p>
+            <p id="status">0</p>
+            <p id="plus">+</p>
+            <button class="add-to-kart">Add to kart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="overlay hiddenn"></div>
+
+  <!-- *******************LIGHTBOX************* -->
+
+
+
+  <div class="light-box">
+    <div>
+      <img style=" height: 500px; border-radius: 20px;  " src="image-product-1.jpg" alt="">
+
+      <div class="sub ">
+        <div class="sub-product"><img onclick="getId(this)" id="sub-product-1" src="image-product-1-thumbnail.jpg"
+            alt="">
+        </div>
+        <div class="sub-product"><img onclick="getId(this)" id="sub-product-2" src="image-product-2-thumbnail.jpg"
+            alt="">
+        </div>
+        <div class="sub-product"><img onclick="getId(this)" id="sub-product-3" src="image-product-3-thumbnail.jpg"
+            alt="">
+        </div>
+        <div class="sub-product"><img onclick="getId(this)" id="sub-product-4" src="image-product-4-thumbnail.jpg"
+            alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
